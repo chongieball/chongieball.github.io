@@ -1,0 +1,19 @@
+{
+    "name": "Football Match",
+    "short_name": "FooMatch",
+    "description": "PWA for Football Match",
+    "theme_color": "#2d3e50",
+    "background_color": "#041828",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/index.html",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "gcm_sender_id": "455379809064"
+}

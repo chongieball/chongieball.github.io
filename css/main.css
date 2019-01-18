@@ -1,0 +1,11 @@
+.primary {
+    background-color: #2d3e50 !important;
+}
+
+.dark {
+    background-color: #041828 !important;
+}
+
+span {
+    word-wrap: break-word;
+}
