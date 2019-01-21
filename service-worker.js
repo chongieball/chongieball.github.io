@@ -14,7 +14,7 @@ let urlsToCache = [
     { url: '/images/logo.png', revision: '1' },
     { url: '/js/materialize.min.js', revision: '1' },
     { url: '/js/nav.js', revision: '1' },
-    { url: '/js/api.js', revision: '1' },
+    { url: '/js/api.js', revision: '2' },
     { url: '/js/index.js', revision: '1' },
     { url: '/js/idb.js', revision: '1' },
     { url: '/js/db.js', revision: '1' },

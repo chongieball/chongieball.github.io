@@ -4,12 +4,12 @@ let myDb = idb.open("foo_match_db", 1, function(upgradeDb) {
 })
 
 function saveMatch(match) {
-    console.log(match)
     return new Promise(function(resolve, reject) {
         myDb.then(function (db) {
             let transaction = db.transaction("match", "readwrite")
             let store = transaction.objectStore("match")
-            store.add(match, match.match.id)
+            match['id'] = match.match.id
+            store.add(match, match['id'])
             return transaction.complete
         })
         .then(function () {
@@ -50,10 +50,11 @@ function deleteFavMatchById(id) {
         myDb.then(function (db) {
             let transaction = db.transaction("match", "readwrite")
             let store = transaction.objectStore("match")
-            store.delete(id)
+            store.delete(parseInt(id))
         })
         .then(function() {
             resolve(true)
         })
+        .catch(error)
     })
 }

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     })
                 })
             } else {
-                deleteFavMatchById(id).then(function() {
+                deleteFavMatchById(match.id).then(function() {
                     M.toast({ html: 'Success Delete Match from Favorite' })
                     iconFavorite.innerText = 'favorite'
                 })
